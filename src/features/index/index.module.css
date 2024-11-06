@@ -1,0 +1,41 @@
+.list {
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: minmax(0, 12.5rem);
+  font-weight: var(--fw-heading);
+}
+
+.item {
+  --avatar-width: 5rem;
+
+  display: grid;
+  align-items: center;
+  gap: 1rem 2rem;
+  grid-template-columns: var(--avatar-width) 1fr;
+  grid-template-areas: "avatar name" "avatar email" "button friend";
+  min-width: fit-content;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bgc-content);
+
+  img {
+    grid-area: avatar;
+    width: var(--avatar-width);
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  a {
+    font-weight: var(--fw-heading);
+    font-size: var(--fs-h4);
+    color: var(--c-author);
+  }
+}
+
+.name {
+  align-self: end;
+}
+
+.email {
+  align-self: start;
+}

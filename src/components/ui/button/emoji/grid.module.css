@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: start;
+  align-self: end;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  background-color: var(--bgc-emoji-grid);
+
+  > * {
+    background-color: var(--bgc-content);
+    padding: 0.75rem;
+  }
+}

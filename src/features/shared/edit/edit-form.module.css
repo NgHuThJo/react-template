@@ -1,0 +1,22 @@
+.form {
+  display: grid;
+  justify-items: start;
+  gap: 2rem;
+  padding: 2rem;
+  background-image: var(--gradient-app);
+
+  div:has(> textarea),
+  textarea {
+    width: 100%;
+  }
+
+  > label {
+    font-weight: var(--fw-button);
+    color: var(--c-link);
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}

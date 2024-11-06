@@ -1,0 +1,58 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 2rem;
+  font-weight: var(--fw-link);
+
+  &[data-animating] {
+    pointer-events: none;
+  }
+}
+
+.list-item {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  column-gap: 1rem;
+  grid-template-columns: 4rem 1fr;
+  grid-template-areas: "avatar name" "avatar email";
+  padding: 1.5rem;
+  outline: 0px solid transparent;
+  box-shadow: var(--box-shadow);
+  font-weight: var(--fw-link);
+  background-color: var(--bgc-content);
+  transition:
+    transform 0.4s ease-out,
+    opacity var(--transition-duration),
+    outline 0.1s;
+
+  &[data-active] {
+    opacity: 0.5;
+  }
+
+  &[data-drop] {
+    opacity: 0.5;
+  }
+
+  p {
+    text-wrap: stable;
+  }
+
+  a {
+    color: var(--c-author);
+  }
+}
+
+.avatar {
+  grid-area: avatar;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.name {
+  grid-area: name;
+}
+
+.email {
+  grid-area: email;
+}

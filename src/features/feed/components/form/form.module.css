@@ -1,0 +1,23 @@
+.form {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--bgc-form);
+  font-weight: var(--fw-button);
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  label {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}

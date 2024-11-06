@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: min(100%, 70rem);
+  gap: var(--gap-main);
+  padding: var(--p-inline-container);
+  background-image: var(--gradient-app);
+}
+
+.nav {
+  padding: var(--p-inline-container);
+  background-color: var(--bgc-content);
+  color: var(--c-nav);
+}

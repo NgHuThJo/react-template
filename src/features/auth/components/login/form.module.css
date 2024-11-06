@@ -1,0 +1,35 @@
+.container {
+  place-self: center;
+  width: min(100%, 40rem);
+  padding-inline: clamp(1rem, -1rem + 10vw, 3rem);
+  isolation: isolate;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+}
+
+.form {
+  --space-gutter: 1.5rem;
+
+  display: grid;
+  gap: var(--space-gutter);
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  background-image: var(--gradient-friend);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-gutter);
+}
+
+.links {
+  display: flex;
+  gap: var(--space-gutter);
+}

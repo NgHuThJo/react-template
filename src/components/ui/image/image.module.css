@@ -1,0 +1,7 @@
+.default {
+}
+
+.icon {
+  width: var(--w-icon);
+  aspect-ratio: 1;
+}

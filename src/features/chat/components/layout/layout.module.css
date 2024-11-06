@@ -1,0 +1,43 @@
+.layout {
+  display: grid;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bgc-content);
+
+  @media screen and (min-width: 480px) {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding-block-start: 2rem;
+  border: 1px solid var(--c-root);
+  text-align: center;
+  background-color: var(--bgc-chat-sidebar);
+}
+
+.actions {
+  display: grid;
+
+  > * {
+    border-top: 1px solid var(--c-root);
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+
+  > h2 {
+    padding-inline: 2rem;
+  }
+}
+
+.list-layout {
+  display: grid;
+  align-items: start;
+
+  gap: 1rem;
+}

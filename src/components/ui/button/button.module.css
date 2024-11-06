@@ -1,0 +1,25 @@
+.default {
+  padding: 0.5rem;
+  background-color: var(--bgc-button);
+}
+
+.auth {
+  composes: default;
+}
+
+.follow {
+  composes: default;
+  background-color: var(--bgc-brand);
+}
+
+.reset {
+  composes: default;
+}
+
+.submit {
+  composes: default;
+}
+
+.toggle {
+  composes: default;
+}

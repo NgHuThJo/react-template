@@ -1,0 +1,54 @@
+.profile {
+  --avatar-width: 5rem;
+  --p-container: 2rem;
+
+  display: grid;
+  justify-items: center;
+  grid-template-rows: [avatar-start] auto [avatar-end info-start] 1fr [info-end];
+  grid-template-columns: [info-start] auto [avatar-start] auto [avatar-end] auto [info-end];
+  row-gap: 2rem;
+  padding: var(--p-container);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  text-align: center;
+  background-color: var(--bgc-profile);
+
+  [data-bg] {
+    width: 100%;
+    height: calc(var(--p-container) + var(--avatar-width) / 2);
+    position: absolute;
+    background-image: var(--gradient-profile);
+  }
+}
+
+.info {
+  grid-area: info;
+  font-weight: var(--fw-button);
+  font-size: var(--fs-profile);
+
+  > * {
+    padding: 0.5rem;
+  }
+
+  > span {
+    font-weight: var(--fw-heading);
+    font-size: var(--fs-profile);
+  }
+}
+
+.avatar {
+  grid-area: avatar;
+  width: var(--avatar-width);
+  height: var(--avatar-width);
+  aspect-ratio: 1;
+  padding: 6px;
+  border-radius: 50%;
+  position: relative;
+  background-image: var(--gradient-app);
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+}

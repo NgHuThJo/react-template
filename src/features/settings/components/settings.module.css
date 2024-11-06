@@ -1,0 +1,16 @@
+.form {
+  display: grid;
+  justify-items: start;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--bgc-form);
+
+  > label {
+    flex-direction: column;
+
+    input[type="file"] {
+      width: max(100%, 10rem);
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.layout {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: var(--bgc-content);
+}
+
+.form {
+  display: flex;
+  padding: 1.5rem;
+  position: relative;
+  background-color: var(--bgc-chat-room);
+
+  > input {
+    flex-grow: 1;
+  }
+}
+
+.chatbox {
+  display: grid;
+  align-content: start;
+  max-height: var(--max-h-chatbox);
+  padding: 1rem;
+  overflow-y: auto;
+
+  > p {
+    font-weight: var(--fw-button);
+  }
+
+  span {
+    font-weight: var(--fw-user-info);
+  }
+}

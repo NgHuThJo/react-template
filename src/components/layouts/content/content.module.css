@@ -1,0 +1,3 @@
+.container {
+  composes: flow-spacing from global;
+}

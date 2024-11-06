@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
+  font-weight: var(--fw-heading);
+  font-size: var(--fs-h2);
+  background-color: var(--bgc-placeholder);
+}
+
+.cursor {
+  animation: blink 0.5s steps(2, end) infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.active {
+  color: var(--c-follow-active);
+}
+
+.button {
+  align-self: stretch;
+  padding: 0.5rem;
+  background-color: var(--bgc-follow-button);
+}

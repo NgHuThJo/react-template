@@ -1,0 +1,17 @@
+.post {
+  composes: flow-spacing from global;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bgc-content);
+
+  a {
+    font-weight: var(--fw-heading);
+    color: var(--c-author);
+  }
+}
+
+.flex-row {
+  composes: flex-wrap from global;
+  gap: 1rem;
+  font-weight: var(--fw-heading);
+}

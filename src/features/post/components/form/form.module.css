@@ -1,0 +1,16 @@
+.form {
+  composes: grid from global;
+  gap: 2rem;
+  padding: 2rem;
+  font-weight: var(--fw-form);
+  background-color: var(--bgc-form);
+
+  label {
+    width: fit-content;
+  }
+}
+
+.actions {
+  composes: flex-wrap from global;
+  gap: 1rem;
+}
